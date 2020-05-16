@@ -1,0 +1,52 @@
+body {
+  font-family: 'Gilroy';
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.heading {
+  color: $color-gray-dark;
+  font-weight: 700;
+
+  &--primary {
+    font-size: 35px;
+
+    @include respond(sm) {
+      font-size: 50px;
+    }
+  }
+
+  &--secondary {
+    font-size: 30px;
+
+    @include respond(sm) {
+      font-size: 35px;
+    }
+  }
+}
+
+.section-text {
+  color: $color-dark-light;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.title {
+  color: $color-primary;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.legal {
+  font-size: 14px;
+
+  &__name {
+    color: $color-primary;
+
+    &:hover {
+      color: darken($color-primary, 15%);
+    }
+  }
+}
+

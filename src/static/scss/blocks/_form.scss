@@ -1,0 +1,44 @@
+.form {
+  max-width: 790px;
+  &__email-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include respond(sm) {
+      position: relative;
+    }
+  }
+
+  &__email {
+    width: 100%;
+    padding: 3.5rem 0 3.5rem 3.5rem;
+    border-radius: 5.7rem;
+    border: 1px solid transparent;
+    font-size: 22px;
+    box-shadow: 0 0.8rem 8rem rgba(0, 0, 0, 0.06);
+    margin-bottom: 2.5rem;
+
+    @include respond(sm) {
+      margin-bottom: 0;
+    }
+
+    &:focus {
+      border: 1px solid green;
+      outline: none;
+    }
+
+    &:invalid {
+      border: 1px solid red;
+    }
+  }
+
+  &__email-button {
+    @include respond(sm) {
+      position: absolute;
+      top: 50%;
+      right: 2rem;
+      transform: translateY(-50%);
+    }
+  }
+}

@@ -1,0 +1,148 @@
+.nav {
+  display: inline-block;
+
+  &__toggle {
+    display: block;
+    cursor: pointer;
+
+    user-select: none;
+
+    @include respond(lg) {
+      display: none;
+    }
+  }
+
+  input {
+    display: none;
+  }
+
+  span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #cdcdcd;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      opacity 0.55s ease;
+  }
+
+  span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  span:last-child() {
+    transform-origin: 0% 100%;
+  }
+
+  input:checked ~ &__toggle span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-1px, -5px);
+    background: #232323;
+  }
+
+  input:checked ~ &__toggle span:nth-last-child(2) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  input:checked ~ &__toggle span:last-child {
+    transform: rotate(-45deg) translate(0px, -3px);
+  }
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateX(-100%);
+    transition: transform 1s cubic-bezier(0.77, 0.2, 0.05, 1);
+
+    background: linear-gradient(to right bottom, $color-primary 0%, $color-gradient 100%);
+
+    @include respond(lg) {
+      position: static;
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+
+      transform: translateX(0);
+      transition: transform 1s cubic-bezier(0.77, 0.2, 0.05, 1);
+
+      background: transparent;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+    margin-bottom: 3rem;
+
+    @include respond(lg) {
+      margin: 0;
+
+      &:not(:last-child) {
+        margin-right: 6rem;
+      }
+
+      &.nav__item--cart {
+        margin-right: 2rem;
+      }
+
+      &:hover .nav__link::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__link {
+    color: $color-black;
+    font-weight: 700;
+    letter-spacing: 0.14rem;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    margin-bottom: 7px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 10px;
+      height: 10px;
+      background-color: #ff9f0d;
+      border-radius: 50%;
+      border: 1px solid $color-black;
+      opacity: 0;
+      transition: all 0.2s;
+    }
+  }
+
+  &__btn {
+    color: $color-gray-dark;
+  }
+
+  &__cart {
+    font-size: 25px;
+  }
+}
+
+#menuToggle:checked ~ .nav__menu {
+  transform: translateX(0);
+  overflow: hidden;
+}

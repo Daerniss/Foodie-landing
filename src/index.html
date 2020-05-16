@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/css/main.css">
+  <title>Foodie</title>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="header__logo">
+      <img src="static/img/icons/logo.png" alt="Foodie logo">
+    </a>
+
+    <nav class="nav" role="navigation">
+      <input id="menuToggle" type="checkbox">
+      <label for="menuToggle" class="nav__toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <ul class="nav__menu">
+        <li class="nav__item">
+          <a href="#home" class="nav__link">
+            Home
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#about" class="nav__link">
+            About Us
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#menu" class="nav__link">
+            Packages
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#contact-us" class="nav__link">
+            Contact Us
+          </a>
+        </li>
+        <li class="nav__item nav__item--cart">
+          <button type="button">
+            <i class="icon-cart nav__cart"></i>
+          </button>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="btn nav__btn btn--white btn--nav">
+            Booking Now
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section id="home" class="hero">
+      <div class="hero__container container">
+        <div class="hero__body-left">
+          <h1 class="heading heading--primary hero__heading">
+            Your Favourite Food
+            Delivered Hot &amp; Fresh
+          </h1>
+          <p class="hero__section-text section-text">
+            Healthy switcher chefs do all the prep work, like peeding, chopping & marinating, so you can cook a fresh
+            food.
+          </p>
+          <a href="/" class="btn btn--yellow btn--sm">
+            Order Now
+            <i class="icon-right hero__icon-right"></i>
+          </a>
+        </div>
+        <div class="hero__body-right">
+          <img src="./static/img/img-hero-1.png" alt="Salat" class="hero__img">
+        </div>
+      </div>
+    </section>
+
+    <section class="info">
+      <div class="container info__container">
+        <ul class="info__list">
+          <li class="info__item">
+            <div class="card info__card">
+              <i class="icon-clock info__icon"></i>
+              <p class="info__title">
+                Today 10:00 am - 7:00 pm
+              </p>
+              <p class="info__text">
+                Working hours
+              </p>
+            </div>
+          </li>
+          <li class="info__item">
+            <div class="card info__card">
+              <i class="icon-location info__icon"></i>
+              <p class="info__title">
+                Velyka Vasylkivska 100
+              </p>
+              <p class="info__text">
+                Get Directions
+              </p>
+            </div>
+          </li>
+          <li class="info__item">
+            <div class="card info__card">
+              <i class="icon-phone info__icon"></i>
+              <p class="info__title">
+                +38 (063)833 24 15
+              </p>
+              <p class="info__text">
+                Call Online
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="about" class="about">
+      <div class="container about__container">
+        <div class="about__body-left">
+          <img src="./static/img/img-info-1.png" alt="Food on a plate" class="about__img">
+        </div>
+        <div class="about__body-right">
+          <h4 class="title about__title">
+            About
+          </h4>
+          <h2 class="heading heading--secondary about__heading">
+            Food is an important part
+            of a balanced diet
+          </h2>
+          <p class="section-text about__section-text">
+            They actually assured me over and over that take little time off and come back and work. Fast forward tow
+            weeks after
+            we are going for a new project.
+            <br />
+            <br />
+            I wrote to let them know ready to come back they kicked
+            me of their team slack all of us are make company email.
+          </p>
+          <div class="about__btn-wrapper">
+            <a href="/" class="btn btn--yellow btn--sm">
+              Learn More
+            </a>
+            <a href="/" class="about__watch">
+              <i class="icon-play-1 about__play-1"></i>
+              <span>Watch Video</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work">
+      <div class="container work__container">
+        <h4 class="title work__title">Work</h4>
+        <h2 class="heading heading--secondary work__heading">
+          How it Works
+        </h2>
+        <p class="section-text work__section-text">
+          It's through mistakes that you actually can grow you get rid of
+          everything that is not essential to makihave to get bad.
+        </p>
+        <ul class="work__list">
+          <li class="work__item">
+            <div class="card work__card">
+              <img src="static/img/icons/icon-food.svg" alt="" class="work__img" aria-hidden="true">
+              <p class="work__title">
+                Pick Meals
+              </p>
+              <p class="work__text">
+                Choose your meals from our diverse weekly menu.
+                Find gluten or dairy free, low carb & veggie options.
+              </p>
+            </div>
+          </li>
+          <li class="work__item">
+            <div class="card work__card">
+              <img src="static/img/icons/icon-hand.svg" alt="" aria-hidden="true" class="work__img">
+              <p class="work__title">
+                Choose How Often
+              </p>
+              <p class="work__text">
+                Our team of chefs do the prep work no more
+                chopping, measuring, or sink full of dishes!
+              </p>
+            </div>
+          </li>
+          <li class="work__item">
+            <div class="card work__card">
+              <img src="static/img/icons/icon-car.svg" alt="" aria-hidden="true" class="work__img">
+              <p class="work__title">
+                Fast Deliveries
+              </p>
+              <p class="work__text">
+                Your freshly prepped 15-min dinner kits
+                arrive on your doorstep in a refrigerated box.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="menu" class="menu">
+      <div class="container menu__container">
+        <div class="menu__title-wrapper">
+          <h4 class="title menu__title">
+            Menu
+          </h4>
+          <h2 class="heading heading--secondary menu__heading">
+            Explore our best menu
+          </h2>
+          <p class="section-text menu__section-text">
+            It's through mistakes that you actually can grow you get rid of everything that is not essential to makihave
+            to get bad.
+          </p>
+        </div>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <div class="card menu__card">
+              <img src="./static/img/img-menu-1.jpg" alt="" aria-hidden="true" class="menu__img">
+              <div class="menu__body">
+                <div class="menu__name-wrapper">
+                  <p class="menu__name">
+                    Rose Muffen
+                  </p>
+                  <span class="menu__price">
+                    12$
+                  </span>
+                </div>
+                <p class="menu__ingredients">
+                  Served with french fries + drink
+                </p>
+                <p class="menu__description">
+                  Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and
+                  more...
+                </p>
+              </div>
+              <div class="menu__footer">
+                <div class="menu__rating">
+                  <span class="star__icon star__icon--positive"></span>
+                  <span class="star__icon star__icon--negative"></span>
+                </div>
+                <button type="button" class="menu__add">
+                  <span>
+                    +
+                  </span>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="menu__item">
+            <div class="card menu__card">
+              <img src="./static/img/img-menu-2.jpg" alt="" aria-hidden="true" class="menu__img">
+              <div class="menu__body">
+                <div class="menu__name-wrapper">
+                  <p class="menu__name">
+                    Pan Cake
+                  </p>
+                  <span class="menu__price">
+                    15$
+                  </span>
+                </div>
+                <p class="menu__ingredients">
+                  Served with french fries + drink
+                </p>
+                <p class="menu__description">
+                  Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and
+                  more...
+                </p>
+              </div>
+              <div class="menu__footer">
+                <div class="menu__rating">
+                  <span class="star__icon star__icon--positive"></span>
+                </div>
+                <button type="button" class="menu__add">
+                  <span>
+                    +
+                  </span>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="menu__item">
+            <div class="card menu__card">
+              <img src="./static/img/img-menu-3.jpg" alt="" aria-hidden="true" class="menu__img">
+              <div class="menu__body">
+                <div class="menu__name-wrapper">
+                  <p class="menu__name">
+                    Egg Muffin
+                  </p>
+                  <span class="menu__price">
+                    12$
+                  </span>
+                </div>
+                <p class="menu__ingredients">
+                  Served with french fries + drink
+                </p>
+                <p class="menu__description">
+                  Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and
+                  more...
+                </p>
+              </div>
+              <div class="menu__footer">
+                <div class="menu__rating">
+                  <span class="star__icon star__icon--positive"></span>
+                </div>
+                <button type="button" class="menu__add">
+                  <span>
+                    +
+                  </span>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="menu__item">
+            <div class="card menu__card">
+              <img src="./static/img/img-menu-4.jpg" alt="" aria-hidden="true" class="menu__img">
+              <div class="menu__body">
+                <div class="menu__name-wrapper">
+                  <p class="menu__name">
+                    Salads
+                  </p>
+                  <span class="menu__price">
+                    12$
+                  </span>
+                </div>
+                <p class="menu__ingredients">
+                  Served with french fries + drink
+                </p>
+                <p class="menu__description">
+                  Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and
+                  more...
+                </p>
+              </div>
+              <div class="menu__footer">
+                <div class="menu__rating">
+                  <span class="star__icon star__icon--positive"></span>
+                </div>
+                <button type="button" class="menu__add">
+                  <span>
+                    +
+                  </span>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="menu__item">
+            <div class="card menu__card">
+              <img src="./static/img/img-menu-5.jpg" alt="" aria-hidden="true" class="menu__img">
+              <div class="menu__body">
+                <div class="menu__name-wrapper">
+                  <p class="menu__name">
+                    Egg Masala
+                  </p>
+                  <span class="menu__price">
+                    13$
+                  </span>
+                </div>
+                <p class="menu__ingredients">
+                  Served with french fries + drink
+                </p>
+                <p class="menu__description">
+                  Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and
+                  more...
+                </p>
+              </div>
+              <div class="menu__footer">
+                <div class="menu__rating">
+                  <span class="star__icon star__icon--positive"></span>
+                </div>
+                <button type="button" class="menu__add">
+                  <span>
+                    +
+                  </span>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="menu__item">
+            <div class="card menu__card">
+              <img src="./static/img/img-menu-6.jpg" alt="" aria-hidden="true" class="menu__img">
+              <div class="menu__body">
+                <div class="menu__name-wrapper">
+                  <p class="menu__name">
+                    Vegie Muffen
+                  </p>
+                  <span class="menu__price">
+                    12$
+                  </span>
+                </div>
+                <p class="menu__ingredients">
+                  Served with french fries + drink
+                </p>
+                <p class="menu__description">
+                  Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and
+                  more...
+                </p>
+              </div>
+              <div class="menu__footer">
+                <div class="menu__rating">
+                  <span class="star__icon star__icon--positive"></span>
+                </div>
+                <button type="button" class="menu__add">
+                  <span>
+                    +
+                  </span>
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <a href="/" class="btn btn--yellow btn--md">
+          Load More
+        </a>
+      </div>
+    </section>
+
+    <section class="testimonial">
+      <div class="container testimonial__container">
+        <div class="testimonial__title-wrapper">
+          <h4 class="title testimonial__title">
+            Testimonial
+          </h4>
+          <h2 class="heading heading--secondary testimonial__heading">
+            What they are saying
+          </h2>
+          <p class="section-text testimonial__section-text">
+            It's through mistakes that you actually can grow you get rid of everything that is not essential to makihave to get bad.
+          </p>
+        </div>
+        <div class="card testimonial__card">
+          <img
+            src="./static/img/img-testimonial-1.png"
+            alt="Habib"
+            class="testimonial__img"
+          >
+          <p class="testimonial__comment">
+            They are engaged communicators and dedicated problem-solvers 
+            regardless of time constraints. The team manageprojet them.
+          </p>
+          <div class="testimonial__rating">
+            <span class="star__icon star__icon--positive"></span>
+            <span class="star__icon star__icon--positive"></span>
+          </div>
+          <div class="testimonial__location">
+            <span class="testimonial__name">
+              Habib
+            </span>
+            <span class="testimonial__city">
+              Tokio
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-us" class="contact-us">
+      <div class="container contact-us__container">
+        <h2 class="heading heading--secondary contact-us__heading">
+          <span>Have Question in mind?</span>
+          Let us help you
+        </h2>
+        <form action="" class="form contact-us__form">
+          <div class="form__email-group">
+            <input
+              type="email"
+              class="form__email"
+              placeholder="yourmail@gmail.com"
+            >
+            <button
+              class="btn btn--yellow btn--lg form__email-button"
+              type="submit"
+            >
+             Send
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <a href="#">
+      <img class="footer__logo" src="static/img/icons/logo.png" alt="Foodie logo">
+    </a>
+    <div class="container footer__container">
+      <ul class="social footer__social">
+        <li class="social__item">
+          <a 
+            href="/"
+            class="social__link"
+            aria-label="Link to facebook"
+          >
+            <i class="social__icon icon-facebook" aria-hidden></i>
+          </a>
+        </li>
+        <li class="social__item">
+          <a 
+            href="/"
+            class="social__link"
+            aria-label="Link to youtube"
+          >
+            <i class="social__icon icon-youtube" aria-hidden></i>
+          </a>
+        </li>
+        <li class="social__item">
+          <a 
+            href="/"
+            class="social__link"
+            aria-label="Link to vimeo"
+          >
+            <i class="social__icon icon-vimeo" aria-hidden></i>
+          </a>
+        </li>
+        <li class="social__item">
+          <a 
+            href="/"
+            class="social__link"
+            aria-label="Link to twitter"
+          >
+            <i class="social__icon icon-twitter" aria-hidden></i>
+          </a>
+        </li>
+      </ul>
+      <nav class="footer__nav">
+        <ul class="footer__nav-list">
+          <li class="nav__item footer__nav-item">
+            <a href="#home" class="nav__link">
+              Home
+            </a>
+          </li>
+          <li class="nav__item footer__nav-item">
+            <a href="#menu" class="nav__link">
+              Packages
+            </a>
+          </li>
+          <li class="nav__item footer__nav-item">
+            <a href="#about" class="nav__link">
+              About Us
+            </a>
+          </li>
+          <li class="nav__item footer__nav-item">
+            <a href="#contact-us" class="nav__link">
+              Contact Us
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__links">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="/" class="footer__link">Quality</a>
+          </li>
+          <li class="footer__item">
+            <a href="/" class="footer__link">Help</a>
+          </li>
+          <li class="footer__item">
+            <a href="/" class="footer__link">Share</a>
+          </li>
+          <li class="footer__item">
+            <a href="/" class="footer__link">Careers</a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a
+              href="tel:+2445221542"
+              class="footer__link"
+            >
+              244-522-1542
+            </a>
+          </li>
+          <li class="footer__item">
+            <a
+              href="mailto:hellow@food.com"
+              class="footer__link"
+            >
+              hellow@food.com
+            </a>
+          </li>
+          <li class="footer__item">
+            <a
+              href="mailto:press@food.com"
+              class="footer__link"
+            >
+              press@food.com
+            </a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a
+              href="/"
+              class="footer__link"
+            >
+              Terms & Conditions
+            </a>
+          </li>
+          <li class="footer__item">
+            <a
+              href="/"
+              class="footer__link"
+            >
+              Privacy Policy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="legal footer__legal">
+      2020 &copy; All rights reserved by 
+      <a href="/" class="legal__name">
+        Shakib Ali
+      </a> 
+    </p>
+  </footer>
+
+  <script src="static/js/main.js"></script>
+</body>
+
+</html>

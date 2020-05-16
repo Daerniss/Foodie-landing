@@ -1,0 +1,63 @@
+.info {
+  margin-bottom: 8rem;
+
+  &__container {
+    max-width: 950px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include respond(sm) {
+      flex-direction: row;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 7rem;
+    }
+
+    @include respond(sm) {
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__card {
+    padding: 1.5rem 3.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-white;
+    margin-bottom: 1.5rem;
+    border-radius: 50%;
+    background-color: $color-primary;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 800;
+    color: $color-dark-light-2;
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba($color-black, 0.5);
+  }
+}

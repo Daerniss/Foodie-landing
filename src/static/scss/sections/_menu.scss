@@ -1,0 +1,93 @@
+.menu {
+  text-align: center;
+  margin-bottom: 15rem;
+
+  &__container {
+
+  }
+
+  &__title-wrapper {
+    max-width: 438px;
+    margin: 0 auto;
+  }
+
+  &__title,
+  &__heading {
+    margin-bottom: 1.5rem;
+  }
+
+  &__section-text {
+    margin-bottom: 6.5rem;
+  }
+
+  &__list {
+    margin-bottom: 8.2rem;
+
+    @include respond(sm) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    position: relative;
+    max-width: 350px;
+    margin: 0 auto;
+
+    margin-bottom: 5rem;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__body {
+    padding: 3.4rem 3rem 2rem;
+    text-align: left;
+  }
+
+  &__name-wrapper {
+    display: flex;
+    font-weight: 600;
+    font-size: 32px;
+    justify-content: space-between;
+  }
+
+  &__ingredients {
+    font-size: 12px;
+    letter-spacing: -0.15px;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    font-size: 13px;
+    letter-spacing: -0.16px;
+    line-height: 18px;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem 3.2rem 2.5rem;
+  }
+
+  &__add {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 12.7rem;
+    height: 10.6rem;
+    background-color: $color-primary;
+    border-top-left-radius: 30px;
+
+    @include respond(sm) {
+      width: 10.7rem;
+      height: 7.6rem;
+    }
+
+    span {
+      color: $color-white;
+      font-size: 7rem;
+    }
+  }
+}

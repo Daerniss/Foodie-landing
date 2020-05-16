@@ -1,0 +1,81 @@
+.testimonial {
+  text-align: center;
+  margin-bottom: 16rem;
+  position: relative;
+
+  @include respond(sm) {
+    &::after {
+      content: '';
+      width: 21rem;
+      height: 32rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-image: url('../img/bg-testimonial-1.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__title-wrapper {
+    max-width: 440px;
+    margin: 0 auto;
+  }
+
+  &__title,
+  &__heading {
+    margin-bottom: 1.5rem;
+  }
+
+  &__section-text {
+    margin-bottom: 6.5rem;
+  }
+
+  &__card {
+    position: relative;
+    padding: 2.5rem 5rem;
+    box-shadow: 0 1.5rem 8rem rgba(183, 183, 183, 0.15);
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 2.5rem;
+      width: 82.5%;
+      box-shadow: 0 1.5rem 8rem rgba(54, 28, 28, 0.15);
+      border-bottom-left-radius: 30px;
+    }
+  }
+
+  &__img {
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 1.5rem;
+  }
+
+  &__comment {
+    max-width: 464px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
+
+  &__rating {
+    margin-bottom: 12px;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  &__city {
+    font-weight: 500;
+    font-size: 14px;
+    color: #545454;
+  }
+}

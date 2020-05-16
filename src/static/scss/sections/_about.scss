@@ -1,0 +1,110 @@
+.about {
+  min-height: 96rem;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10rem;
+
+  @include respond(md) {
+    margin-bottom: 0;
+    &::before {
+      content: '';
+      width: 50%;
+      height: 100%;
+
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-image: url('../img/bg-about-1.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+
+    @include respond(lg) {
+      &::after {
+        content: '';
+        width: 40rem;
+        height: 37.9rem;
+  
+        position: absolute;
+        bottom: 0;
+        right: -12rem;
+        background-image: url('../img/bg-about-2.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: -1;
+      }
+    }
+  }
+
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+    @include respond(md) {
+      flex-direction: row;
+    }
+  }
+
+  &__body-left {
+    height: 70rem;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &__body-right {
+    @include respond(sm) {
+      max-width: 70%;
+    }
+    @include respond(md) {
+      max-width: 42rem;
+    }
+  }
+
+  &__title {
+    margin-bottom: 1.5rem;
+  }
+
+  &__heading {
+    margin-bottom: 3rem;
+  }
+
+  &__section-text {
+    margin-bottom: 4rem;
+  }
+
+  &__btn-wrapper {
+    display: flex;
+  }
+  
+  &__watch {
+    display: flex;
+    align-items: center;
+    margin-left: 3.7rem;
+
+    span {
+      font-size: 15px;
+      color: $color-dark-light;
+    }
+  }
+
+  &__play-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-gray-dark;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    margin-right: 2rem;
+    color: $color-white;
+  }
+}

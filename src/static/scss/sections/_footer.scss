@@ -1,0 +1,89 @@
+.footer {
+  position: relative;
+  text-align: center;
+  border-top: 1px solid rgba($color-primary, 0.4);
+  padding-top: 2rem;
+
+  @include respond(md) {
+    &::after {
+      content: '';
+      width: 52rem;
+      height: 48rem;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-image: url('../img/bg-footer-1.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
+
+  &__social {
+    max-width: 350px;
+    margin: 0 auto 3rem auto;
+  }
+
+  &__logo {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  &__nav {
+    margin-bottom: 3rem;
+  }
+
+  &__nav-list {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav-item {
+    width: 50%;
+
+    @include respond(sm) {
+      width: auto;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include respond(sm) {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+
+  &__list {
+    width: 50%;
+    margin-bottom: 3rem;
+
+    @include respond(sm) {
+      width: auto;
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    color: #9f9f9f;
+    font-weight: 600;
+    line-height: 2;
+
+    &:hover {
+      color: darken(#9f9f9f, 15%)
+    }
+  }
+
+  &__legal {
+    margin: 5.4rem 0 2.4rem 0;
+  }
+}
